@@ -4,10 +4,12 @@ black==21.9b0
 click==8.0.1
 colorama==0.4.4
 Django==3.2.7
+django-heroku==0.3.1
 graphene==2.1.9
 graphene-django==2.15.0
 graphql-core==2.3.2
 graphql-relay==2.0.1
+gunicorn==20.1.0
 mypy-extensions==0.4.3
 nanoid==2.0.0
 pathspec==0.9.0
