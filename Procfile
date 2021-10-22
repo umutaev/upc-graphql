@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn bv_graphql.wsgi
