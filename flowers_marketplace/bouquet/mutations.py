@@ -1,3 +1,4 @@
+from typing_extensions import Required
 import graphene
 
 from .types import BouquetType
@@ -29,6 +30,7 @@ class CreateBouquet(graphene.Mutation):
 
 class UpdateBouquet(graphene.Mutation):
     class Arguments:
+        id = graphene.ID(required=True)
         name = graphene.String(required=True)
         price = graphene.Decimal(required=True)
         photo_link = graphene.String(required=True)
